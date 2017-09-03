@@ -1,0 +1,13 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Schroders.ServiceBase.Commands": "1.0.0-1",
+    "Schroders.ServiceDiscovery.Repository": "1.0.0-*",
+    "Schroders.ServiceDiscovery.DataContracts": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

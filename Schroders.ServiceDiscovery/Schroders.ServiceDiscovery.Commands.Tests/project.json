@@ -1,0 +1,18 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "testRunner": "mstest",
+
+  "dependencies": {
+    "dotnet-test-mstest": "1.1.2-preview",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Moq": "4.5.28",
+    "MSTest.TestFramework": "1.0.6-preview",
+    "Schroders.ServiceDiscovery.Commands": "1.0.0-*",
+    "Schroders.Test.Infrastructure": "1.0.0-1"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}
