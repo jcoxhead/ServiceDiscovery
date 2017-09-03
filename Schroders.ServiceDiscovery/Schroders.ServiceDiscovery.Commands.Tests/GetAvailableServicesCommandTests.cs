@@ -42,7 +42,7 @@ namespace Schroders.ServiceDiscovery.Commands.Tests
                 var request = new GetAvailableServicesRequest();
 
                 var commandContext = scope.Resolve<GetAvailableServicesCommand>();
-                var response = commandContext.Execute(request);
+                var response = commandContext.Execute(request, new Dictionary<string, object>());
 
                 Assert.IsNotNull(response);
                 Assert.AreEqual(response.Services[0].Name, testServiceName);

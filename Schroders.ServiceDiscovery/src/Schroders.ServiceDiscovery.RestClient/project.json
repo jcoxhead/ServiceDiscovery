@@ -2,7 +2,7 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Schroders.ServiceBase.RestClient": "1.0.0-1",
+    "Schroders.ServiceBase.RestClient": "2.0.0-alpha",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
     "System.Net.Http": "4.0.0"
   },

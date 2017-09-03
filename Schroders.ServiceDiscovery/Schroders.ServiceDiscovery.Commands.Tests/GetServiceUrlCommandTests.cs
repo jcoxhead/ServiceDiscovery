@@ -42,7 +42,7 @@ namespace Schroders.ServiceDiscovery.Commands.Tests
             {
                 var request = new GetServiceUrlRequest() { ServiceName = testServiceName, ServiceVersion = version };
 
-                var response = scope.Resolve<GetServiceUrlCommand>().Execute(request);
+                var response = scope.Resolve<GetServiceUrlCommand>().Execute(request, new Dictionary<string, object>());
 
                 Assert.IsNotNull(response);
                 Assert.AreEqual(url, response.ServiceUrl);

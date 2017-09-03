@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Schroders.ServiceBase.Commands;
 using Schroders.ServiceDiscovery.DataContracts.Requests;
 using Schroders.ServiceDiscovery.DataContracts.Responses;
@@ -15,7 +17,7 @@ namespace Schroders.ServiceDiscovery.Commands
             this.serviceRepository = serviceRepository;
         }
 
-        public GetServicesResponse Execute(GetAvailableServicesRequest request)
+        public GetServicesResponse Execute(GetAvailableServicesRequest request, IDictionary<string, object> context)
         {
             var response = serviceRepository.GetServices();
 
@@ -25,6 +27,6 @@ namespace Schroders.ServiceDiscovery.Commands
             }
 
             return new GetServicesResponse { Services = response.Services };
-        }
+        }      
     }
 }
